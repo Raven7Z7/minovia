@@ -1,12 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    font-family: 'Poppins', sans-serif; /* Usaremos una fuente más bonita después */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/banos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    color: #333;
 }
 
 .tracker-container {
@@ -68,4 +70,60 @@ h1 {
 
 #add-button:hover {
     background-color: #2980b9;
+}
+
+#couple-photo {
+    width: 100px; /* O el tamaño que prefieras */
+    height: 100px;
+    border-radius: 50%; /* Esto la hace redonda */
+    object-fit: cover; /* Evita que la imagen se deforme */
+    border: 3px solid white;
+    margin-bottom: 15px;
+}
+
+#milestone-message {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+    min-height: 20px; /* Para que no salte el diseño */
+}
+
+/* Estilo para los botones de selección de persona */
+.person-selector {
+    margin-bottom: 15px;
+}
+.person-selector label {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Estilo para la sección del historial */
+.history-section {
+    margin-top: 30px;
+    text-align: left;
+    max-height: 200px; /* Altura máxima, si es muy largo, aparecerá scroll */
+    overflow-y: auto; /* Scroll vertical automático */
+    padding-right: 10px;
+    border-top: 1px solid #eee;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#history-list li {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#history-list li .amount {
+    font-weight: bold;
+    color: #27ae60;
 }
