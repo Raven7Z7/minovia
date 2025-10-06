@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif; /* Usaremos una fuente más bonita después */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/banos.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/banos.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
@@ -128,3 +128,4 @@ h1 {
     color: #27ae60;
 
 }
+
