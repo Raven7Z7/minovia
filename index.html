@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorro para Baños 🌴</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tracker-container">
+        <header>
+            <h1>Nuestro Viaje a Baños</h1>
+            <p>Meta de ahorro: <span id="goal-amount">$200</span></p>
+        </header>
+        
+        <main>
+            <div class="progress-section">
+                <h2>Progreso Total</h2>
+                <div class="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <p id="current-amount">$0</p>
+            </div>
+
+            <div class="input-section">
+                <h3>Añadir un nuevo ahorro:</h3>
+                <input type="number" id="amount-input" placeholder="Ej: 10">
+                <button id="add-button">Añadir Ahorro</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- SDKs de Firebase (¡siempre versiones actualizadas de la web de Firebase!) -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    
+    <!-- Tu script personal -->
+    <script src="script.js"></script>
+</body>
+</html>
