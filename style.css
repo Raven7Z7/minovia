@@ -126,9 +126,64 @@ h1 {
 #history-list li .amount {
     font-weight: bold;
     color: #27ae60;
-
 }
 
+/* --- ESTILOS RESPONSIVE PARA MÓVILES --- */
+/* Esta regla se aplicará a pantallas de 600px de ancho o menos */
 
+@media (max-width: 600px) {
+    body {
+        /* Permite que el contenido ocupe toda la pantalla sin márgenes forzados */
+        align-items: flex-start; 
+        padding-top: 20px;
+    }
 
+    .tracker-container {
+        /* Hacemos que la tarjeta ocupe casi todo el ancho, con pequeños márgenes */
+        width: 95%;
+        padding: 20px; /* Reducimos un poco el padding en pantallas pequeñas */
+        margin-top: 0;
+    }
 
+    h1 {
+        /* Reducimos el tamaño del título principal para que no se vea tan grande */
+        font-size: 1.8em;
+    }
+
+    #couple-photo {
+        /* Hacemos la foto un poco más pequeña en móviles */
+        width: 80px;
+        height: 80px;
+    }
+
+    .input-section {
+        /* Hacemos que el input y el botón sean más fáciles de tocar */
+        display: flex;
+        flex-direction: column; /* Apilamos los elementos verticalmente */
+        align-items: center; /* Centramos los elementos apilados */
+    }
+
+    #amount-input {
+        width: 80%; /* Hacemos el campo de número más grande */
+        margin-right: 0;
+        margin-bottom: 15px; /* Añadimos espacio entre el input y el botón */
+        text-align: center; /* Centramos el texto del input */
+        font-size: 1.2em; /* Letra más grande para facilitar la escritura */
+    }
+
+    #add-button {
+        width: 80%; /* El botón ocupa el mismo ancho que el input */
+        padding: 15px; /* Hacemos el botón más grande y fácil de presionar */
+        font-size: 1.1em;
+    }
+
+    .history-section {
+        /* Aumentamos la altura del historial en móviles, ya que hay más espacio vertical */
+        max-height: 250px;
+    }
+
+    #history-list li {
+        /* Hacemos el texto del historial un poco más grande para leerlo mejor */
+        font-size: 1em;
+    }
+}
